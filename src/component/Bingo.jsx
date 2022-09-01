@@ -15,7 +15,9 @@ const Bingo = () => {
           bingo.map((e, index) => (
             <div key={index} className="col">
               {e.map((x, index) => (
-                <span key={index}>{x}</span>
+                <span key={index}>
+                  {x.toString().length < 2 && x !== "" ? `0${x}` : x}
+                </span>
               ))}
             </div>
           ))}
