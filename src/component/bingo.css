@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../../public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.layout {
+  background-color: rgba(255, 255, 255, 0.134);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  width: 50%;
+  height: 50%;
+  margin-top: 15%;
+}
+
+.layoutOff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  width: 50%;
+  height: 50%;
+  margin-top: 15%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.col {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.col span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.438);
+  backdrop-filter: blur(5px);
+  transition: 0.3s all ease;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.createBtn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: -15%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.3s all ease;
+}
+
+button:hover {
+  background-color: rgb(246, 79, 79);
+  border-radius: 8px;
+  transition: 0.3s all ease;
+  box-shadow: 0 0 20px 5px;
+}
+
+span:hover {
+  background-color: rgb(246, 79, 79);
+  transform: scale(1.02);
+  transition: 0.3s all ease;
+}
